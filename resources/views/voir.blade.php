@@ -9,7 +9,10 @@
         <ul class="list-group mt-2">
             <h4>Article disponibles</h4>
             @forelse ($articles as $article)
-            <li class="list-group-item">{{$article->titre}}</li>
+            <li class="list-group-item">
+                <a href="/article/{{$article->id}}" class="title">{{$article->titre}}</a>
+                <div class="description">{{$article->description}}</div>
+            </li>
             @empty
             <p class="text text-info">Aucun article disponible</p>
                 

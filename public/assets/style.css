@@ -8,3 +8,13 @@
 .mt-2{
     margin-top: 5rem !important;
 }
+
+.list-group-item .title{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.list-group-item .description {
+    font-size: 15px;
+    margin-top: 1rem;
+}

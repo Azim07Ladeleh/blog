@@ -22,6 +22,12 @@
                     {{$message}}
                 </div>
                 @enderror
+                <textarea name="description" class="form-control mt-1" placeholder="Entrer Votre description"></textarea>
+                 @error('description')
+                <div class="text text-danger">
+                    {{$message}}
+                </div>
+                @enderror
             </div>
             {{-- <input type="email" class="form-control"  placeholder="Votre Email" name="email" value={{old('email')}}> --}}
             <button type="submit" class="btn btn-primary" name="btn-submit">Ajouter</button>
@@ -31,6 +37,6 @@
     
 </div>
 <div class="container mt-2">
-         <a href="/voir">Liste des articles disponibles</a>
+         <a href="/voir" class="btn btn-success">Liste des articles disponibles</a>
        </div>
 @endsection 

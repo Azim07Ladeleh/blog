@@ -23,13 +23,16 @@ class ArticlesRequest extends FormRequest
     {
         return [
             'title' => 'required|min: 3',
+            'description' => 'required|min: 5',
         ];
     }
     public function message()
     {
         return [
             'title.required' => 'Le champ titre est requis',
-            'title.min' => 'Le champ titre doit contenir au moins 3 caractères',   
+            'title.min' => 'Le champ titre doit contenir au moins 3 caractères', 
+            'description.required' => 'Le champ description est requis',
+            'description.min' => 'Le champ description doit contenir au moins 5 caractères',   
         ];
     }
 }
